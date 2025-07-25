@@ -1,12 +1,17 @@
 # Bump ocis commit latest id
 ## Configurable variables
 
-`FOLDER_PATH`  # Replace with your actual folder path (Eg: FOLDER_PATH=www/web)
-`BRANCH_CHECKOUT` # Replace if you want a different base branch (Eg: BRANCH_CHECKOUT=master)
-`OWNER` # GitHub username/org (Eg: OWNER=owncloud)
-`REPO` # GitHub repo (Eg: REPO="momo-restro-list" )
-`GITHUB_TOKEN` # GitHub personal access token (Eg: GITHUB_TOKEN=gph-***********)
-`OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID` # ocis branch which need to get latest commit id (Eg: OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID=master)
+`FOLDER_PATH`  _Replace with your actual folder path (Eg: FOLDER_PATH=www/web)_
+
+`BRANCH_CHECKOUT` _Replace if you want a different base branch (Eg: BRANCH_CHECKOUT=master)_
+
+`OWNER` _GitHub username/org (Eg: OWNER=owncloud)_
+
+`REPO` _GitHub repo (Eg: REPO="momo-restro-list" )_
+
+`GITHUB_TOKEN` _GitHub personal access token (Eg: GITHUB_TOKEN=gph-***********)_
+
+`OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID` _ocis branch which need to get latest commit id (Eg: OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID=master)_
 
 ## For example;
 
