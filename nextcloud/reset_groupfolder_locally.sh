@@ -56,7 +56,7 @@ fi
 
 # By default delete the Openproject group
 if [[ -z "$NC_GROUPNAME" ]]; then
-  NC_GROUPNAME='OpenProject'
+  NC_GROUPNAME=("OpenProject" "OpenProjectNoAutomaticProjectFolders")
 fi
 
 # Dcoker related
@@ -105,9 +105,11 @@ fi
 echo -e "\nStep 4: Deleting the user \"$NC_USERNAME\"..."
 $LOCAL_COMMAND $OCC_DELETE_USER_COMMAND $NC_USERNAME 2>/dev/null
 
-
-echo -e "\nStep 5: Deleting the group \"$NC_GROUPNAME\"..."
-$LOCAL_COMMAND $OCC_DELETE_GROUP_COMMAND $NC_GROUPNAME 2>/dev/null
+echo -e "\nStep 5:"
+for str in ${NC_GROUPNAME[@]}; do
+  log_info "\nDeleting the group \"$str\"..."
+  $LOCAL_COMMAND $OCC_DELETE_GROUP_COMMAND $NC_GROUPNAME 2>/dev/null
+done
 
 
 echo -e "\nStep 6: Enabling the integration_openprojet ..."
