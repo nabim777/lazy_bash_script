@@ -15,10 +15,6 @@
 
 ## For example;
 
-## for web stable-12
-```bash
-FOLDER_PATH=~/www/web QA_ISSUE_NO=890 BRANCH_CHECKOUT=stable-12 OWNER=owncloud REPO=web OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID=stable-7.2 bash ./bump_ocis_latest_commit_id.sh
-```
 
 ## for web master
 ```bash
@@ -31,7 +27,7 @@ FOLDER_PATH=~/www/reva-owncloud QA_ISSUE_NO=890 BRANCH_CHECKOUT=main OWNER=owncl
 ```
 
 
-## for web stable-12.2
+## for web stable-12.3
 ```bash
-FOLDER_PATH=~/www/web QA_ISSUE_NO=890 BRANCH_CHECKOUT=stable-12.2 OWNER=owncloud REPO=web OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID=master bash ./bump_ocis_latest_commit_id.sh
+FOLDER_PATH=~/www/web QA_ISSUE_NO=890 BRANCH_CHECKOUT=stable-12.3 OWNER=owncloud REPO=web OCIS_BRANCH_TO_GET_LATEST_COMMIT_ID=master bash ./bump_ocis_latest_commit_id.sh
 ```
