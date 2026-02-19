@@ -23,7 +23,7 @@
 
 
 # Command to run script:
-#   NEXTCLOUD_CONTAINER_ID=bbe57f6c08ae bash reset_groupfolder_locally.sh
+#   NEXTCLOUD_CONTAINER_ID=bbe57f6c08ae bash reset_groupfolder_docker.sh
 
 
 # helper function
