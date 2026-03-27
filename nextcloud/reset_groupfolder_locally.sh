@@ -27,10 +27,6 @@
 
 # helper function
 
-PATH_FILE="/home/nabin/www/stable31"
-cd $PATH_FILE
-echo -e "First go to path $PATH_FILE \n"
-
 log_error() {
   echo -e "\e[31m$1\e[0m"
 }
@@ -43,11 +39,21 @@ log_success() {
   echo -e "\e[32m$1\e[0m"
 }
 
+
 if [[ $DEBUG == "true" ]]; then
   log_info "Debug mode is enabled"
   set -x
   set -v
 fi
+
+if [[ -z "$PATH_FILE" ]]; then
+  log_error "Path to the server requied where occ file loacted"
+  exit 1
+fi
+
+
+cd $PATH_FILE
+echo -e "First go to path $PATH_FILE \n"
 
 # By default delete the Openproject user
 if [[ -z "$NC_USERNAME" ]]; then
